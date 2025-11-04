@@ -27,7 +27,7 @@ function loadGallery(page) {
     img.alt = `Gallery image ${i}`;
     img.dataset.index = i - start;
     galleryContainer.appendChild(img);
-    currentImages.push(`./img/gallery/${i}.jpg`);
+    currentImages.unshift(`./img/gallery/${i}.jpg`);
   }
 
   pageNumber.textContent = `Page ${page} of ${TOTAL_PAGES}`;
